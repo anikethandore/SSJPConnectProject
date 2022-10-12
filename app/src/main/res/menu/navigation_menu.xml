@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btmenuHome"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/btmenuProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_pin"/>
+    <item
+        android:id="@+id/btmenuMore"
+        android:title="More"
+        android:icon="@drawable/ic_more_horiz"/>
+
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Dashboard"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_notification"
+            android:title="Notification"
+            android:icon="@drawable/notifications_icon"/>
+
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:title="My Profile"/>
+
+            <item
+                android:id="@+id/nav_changepass"
+                android:icon="@drawable/key_icon"
+                android:title="Change Password"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/info_icon"
+                android:title="About us"/>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_icon"
+                android:title="Share"/>
+
+
+
+        </menu>
+    </item>
+</menu>

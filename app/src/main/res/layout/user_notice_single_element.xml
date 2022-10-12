@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:background="@color/white"
+    app:contentPadding="10dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp">
+
+      <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:id="@+id/nameTV"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Name"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/decsTV"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="description of the notice for students"
+               android:textColor="@color/black"
+               />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#7E7D7D"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+               <TextView
+                   android:id="@+id/branchTV"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Branch"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   />
+
+               <TextView
+                   android:id="@+id/yearTV"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Year"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   />
+
+               <TextView
+                   android:id="@+id/dateTV"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="Date"
+                   android:textAlignment="textEnd"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   />
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/item_click_btn"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#00FFFFFF"
+           android:text=""
+           />
+
+
+
+
+</androidx.cardview.widget.CardView>

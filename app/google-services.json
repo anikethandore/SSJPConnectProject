@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950326716092",
+    "project_id": "ssjp-connect-app",
+    "storage_bucket": "ssjp-connect-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950326716092:android:76f7e178b6902ae72652b9",
+        "android_client_info": {
+          "package_name": "com.anikethandore.ssjpconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950326716092-jbt9p0b7r7u7q255l8lenpf6fad9gsse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJlOFy6udpQtpvkZ7ewRU8r_uleB-NIxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950326716092-jbt9p0b7r7u7q255l8lenpf6fad9gsse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/person_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_person_24"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/proUNtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of User"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/person_icon"
+                android:fontFamily="@font/acme"
+                android:includeFontPadding="false"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/proUEtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID"
+                android:layout_below="@+id/proUNtxt"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_toEndOf="@id/person_icon"
+                android:fontFamily="@font/acme"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/proFNet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:text="Aniket Handore"
+                    android:drawableTint="@color/colorPrimary"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/proEMet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="10dp"
+                    android:text="aniket@gmail.com"
+                    android:drawableTint="@color/colorPrimary"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/proPNet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
+                    android:drawablePadding="10dp"
+                    android:text="9874561230"
+                    android:drawableTint="@color/colorPrimary"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+      <!--      <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/proPSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_bg"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/circle_icon"
+                    android:drawableLeft="@drawable/circle_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:inputType="textPassword"
+                    android:text="password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+-->
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_cngPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:text="Log Out"
+                android:textColor="@color/red"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
